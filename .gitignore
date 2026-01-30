@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+*.egg-info/
+
+# Playwright
+playwright-report/
+test-results/
+screenshots/
+videos/
+traces/
+
+# Testing
+.pytest_cache/
+reports/
+htmlcov/
+.coverage
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Environment
+.env
