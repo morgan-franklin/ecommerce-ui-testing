@@ -36,9 +36,10 @@ class ProductsPage(BasePage):
     
     def add_product_by_name(self, product_name: str):
         """Add specific product to cart by name"""
-        product = self.page.locator(self.PRODUCT_NAME, has_text=product_name)
-        add_button = product.locator("..").locator("..", self.ADD_TO_CART_BUTTON)
-        add_button.click()
+        # Convert product name to button ID
+        # "Sauce Labs Backpack" -> "add-to-cart-sauce-labs-backpack"
+        button_id = f"add-to-cart-{product_name.lower().replace(' ', '-')}"
+        self.page.locator(f"#{button_id}").click()
     
     def get_cart_count(self) -> str:
         """Get shopping cart badge count"""
