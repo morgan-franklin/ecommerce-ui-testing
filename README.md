@@ -80,8 +80,8 @@ pytest --html=reports/report.html --self-contained-html
 
 ## 📊 Current Test Coverage
 
-**Total Tests:** 4  
-**Passing:** 4 (100%)  
+**Total Tests:** 14  
+**Passing:** 14 (100%)  
 **Last Updated:** January 30, 2026
 
 ### Login Tests ✅
@@ -90,12 +90,25 @@ pytest --html=reports/report.html --self-contained-html
 - ✅ Invalid password handling
 - ✅ Empty credentials validation
 
+### Products Tests ✅
+- ✅ Products page loads correctly
+- ✅ Add single product to cart
+- ✅ Add multiple products to cart
+- ✅ Remove product from cart
+- ✅ Product count accuracy
+
+### Shopping Cart Tests ✅
+- ✅ View cart with items
+- ✅ Cart displays correct product
+- ✅ Remove item from cart
+- ✅ Continue shopping button
+- ✅ Checkout button visible
+
 ### Upcoming Test Coverage
-- [ ] Products page tests
-- [ ] Shopping cart tests
-- [ ] Checkout flow tests
-- [ ] Filtering and sorting
-- [ ] Remove from cart
+- [ ] Checkout form validation
+- [ ] Complete checkout flow
+- [ ] Order confirmation
+- [ ] Multiple user workflows
 
 ## 🎨 Page Object Model
 
